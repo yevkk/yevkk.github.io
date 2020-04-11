@@ -7,6 +7,7 @@
     width: 750px;
     height: 750px;
     position: absolute;
+    background-color: navy;
     background-size: cover;
 }
 
@@ -32,7 +33,7 @@
     z-index: 1;
 }
 
-.container section {
+.main-section {
     display: block;
     float: left;
     width: 500px;
@@ -80,11 +81,11 @@
     background-color: white;
     font-weight: bold;
     text-align: center;
-    color: dodgerblue;
+    color: #0350c4;
 }
 
 .menu-item-side:first-child {
-    color: #d275dc;
+    color: #a01855;
 }
 
 .menu-item-side:not(:first-child) {
@@ -133,7 +134,7 @@
 .content a {
     display: block;
     margin-top: 15px;
-    color: dodgerblue;
+    color: #0350c4;
     font-weight: bold;
 }
 
