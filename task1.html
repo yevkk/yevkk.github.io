@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Lec 7. Task 1</title>
+    <link rel="stylesheet" href="reset.css">
+    <style>
+        #root {
+            box-sizing: border-box;
+            padding: 20px;
+            margin: auto;
+            width: 750px;
+        }
+
+        .container {
+            padding: 5px 5px 10px 5px;
+            margin-bottom: 20px;
+            color: black;
+            font-size: 15px;
+            background-color: white;
+            border-radius: 10px;
+            box-shadow: 5px 5px 20px rgba(0, 0, 0, 0.2);
+        }
+
+        .container h2 {
+            margin-bottom: 15px;
+            text-indent: 10px;
+            border-bottom: 1.5px dashed navy;
+            font-size: 25px;
+        }
+
+        #container-1 span:after {
+            content: ">750px";
+            font-weight: bold;
+            color: green;
+        }
+
+        ul {
+            list-style-type: circle;
+        }
+
+        li {
+            margin: 5px 25px;
+            border: 7px solid transparent;
+        }
+
+        #container-2 li:first-child {
+            color: orangered;
+            font-family: monospace;
+            font-weight: bolder;
+            font-size: 1.5em;
+        }
+
+        #container-3 li:hover {
+            color: crimson;
+            font-family: monospace;
+            font-weight: bolder;
+            font-size: 1.5em;
+            border: 3px solid transparent;
+        }
+
+        #container-4 .input-holder {
+            display: block;
+            margin: 15px 5px;
+        }
+
+        #container-4 :checked + label {
+            color: green;
+            font-style: oblique;
+            font-weight: bold;
+        }
+
+        #container-5 div {
+            width: 400px;
+            height: 40px;
+            background-color: orange;
+            margin: 10px;
+            line-height: 40px;
+            text-indent: 15px;
+        }
+
+        #container-5 :empty {
+            background-color: orangered;
+        }
+
+        @media screen and (max-width: 750px) {
+            #root {
+                padding: 10px;
+                width: 100%;
+            }
+
+            .container {
+                margin: 10px 5px;
+            }
+
+            #container-1 span:after {
+                content: "<750px";
+                font-weight: bold;
+                color: orangered;
+            }
+        }
+
+        @media print {
+            .container {
+                box-shadow: none;
+                border-radius: 0;
+                padding-bottom: 15px;
+                border-bottom: 1px solid black;
+            }
+        }
+    </style>
+</head>
+<body>
+<div id="root">
+    <section class="container" id="container-1">
+        <h2>@media, :before</h2>
+        <div>
+            <p>Якщо ширина сторінки більше за 750px, то ширина контейнерів дорівнює 750px, якщо ширина менша, то ширина
+                контейнерів дорівнюватиме ширині сторінки.</p>
+            <p><span>Ширина сторінки: </span></p>
+            <p>Також є спеціальні стилі для друку сторінки</p>
+        </div>
+    </section>
+    <section class="container" id="container-2">
+        <h2>:first-child</h2>
+        <div>
+            <ul>
+                <li>Перший пункт</li>
+                <li>Другий пункт</li>
+                <li>Третій пункт</li>
+            </ul>
+        </div>
+    </section>
+    <section class="container" id="container-3">
+        <h2>:hover</h2>
+        <div>
+            <ul>
+                <li>Перший пункт</li>
+                <li>Другий пункт</li>
+                <li>Третій пункт</li>
+            </ul>
+        </div>
+    </section>
+    <section class="container" id="container-4">
+        <h2>:checked</h2>
+        <div>
+            <div class="input-holder">
+                <input type="checkbox" id="checkbox-1">
+                <label for="checkbox-1">Checkbox 1</label>
+            </div>
+            <div class="input-holder">
+                <input type="checkbox" id="checkbox-2">
+                <label for="checkbox-2">Checkbox 2</label>
+            </div>
+            <div class="input-holder">
+                <input type="checkbox" id="checkbox-3">
+                <label for="checkbox-3">Checkbox 3</label>
+            </div>
+        </div>
+    </section>
+    <section class="container" id="container-5">
+        <h2>:empty</h2>
+        <div></div>
+        <div>There is a space in container below</div>
+        <div> </div>
+        <div></div>
+        <div>Some text</div>
+    </section>
+</div>
+</body>
+</html>

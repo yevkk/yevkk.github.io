@@ -1,0 +1,50 @@
+#figure-5 {
+    margin: auto;
+    position: relative;
+    width: 300px;
+    height: 300px;
+}
+
+#figure-5 div {
+    position: absolute;
+    box-sizing: border-box;
+    display: block;
+}
+
+#element-5-1 {
+    width: 90px;
+    height: 40px;
+    top: 130px;
+    left: 75px;
+    background-color: rebeccapurple;
+}
+
+#element-5-2 {
+    width: 40px;
+    height: 40px;
+    top: 130px;
+    left: 165px;
+    border: 20px solid;
+    border-color: transparent transparent transparent #864d9d;
+    transition: left 0.5s ease;
+}
+
+#element-5-3 {
+    width: 20px;
+    height: 40px;
+    top: 130px;
+    left: 75px;
+    border-bottom: 40px solid rgba(255, 255, 255, 0.7);
+    border-right: 20px solid transparent;
+}
+
+#element-5-4 {
+    width: 40px;
+    height: 80px;
+    top: 130px;
+    left: 75px;
+    border-width: 40px 20px;
+    border-style: solid;
+    border-color: rgba(255, 255, 255, 0.3) transparent transparent transparent;
+}
+

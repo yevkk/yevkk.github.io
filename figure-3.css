@@ -1,0 +1,87 @@
+#figure-3 {
+    margin: auto;
+    position: relative;
+    width: 300px;
+    height: 300px;
+}
+
+#figure-3 div {
+    position: absolute;
+    box-sizing: border-box;
+    display: block;
+}
+
+#element-3-1 {
+    width: 176px;
+    height: 100px;
+    top: 100px;
+    left: 62px;
+    border-radius: 15px;
+    border: 3px solid #1964b5;
+    background-color: #74d3f9;
+}
+
+#element-3-2 {
+    width: 40px;
+    height: 40px;
+    top: 197px;
+    left: 130px;
+    border: 20px solid;
+    border-color: #1964b5 transparent transparent transparent;
+}
+
+#element-3-2:after {
+    content: '';
+    position: absolute;
+    box-sizing: border-box;
+    display: block;
+    top: -24px;
+    left: -20px;
+    border: 20px solid;
+    border-color: #74d3f9 transparent transparent transparent;
+}
+
+#element-3-3 {
+    width: 20px;
+    height: 20px;
+    top: 137px;
+    left: 100px;
+    border-radius: 50%;
+    background-color: white;
+    animation: dot-animation 2s ease-in-out 0s infinite normal none;
+}
+
+#element-3-4 {
+    width: 20px;
+    height: 20px;
+    top: 137px;
+    left: 140px;
+    border-radius: 50%;
+    background-color: white;
+    animation: dot-animation 2s ease-in-out 0.5s infinite normal none;
+}
+
+#element-3-5 {
+    width: 20px;
+    height: 20px;
+    top: 137px;
+    left: 180px;
+    border-radius: 50%;
+    background-color: white;
+    animation: dot-animation 2s ease-in-out 1s infinite normal none;
+}
+
+@keyframes dot-animation {
+    0% {
+        background-color: white;
+    }
+
+    12% {
+        background-color: transparent;
+    }
+
+    25% {
+        background-color: white;
+    }
+}
+
