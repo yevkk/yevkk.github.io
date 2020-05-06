@@ -1,0 +1,37 @@
+[
+  {
+    "name": "Introduction to Algorithms",
+    "authors": " Thomas H. Cormen, Charles E. Leiserson",
+    "cost": 72.37
+  },
+  {
+    "name": "Clean Code",
+    "authors": "Robert C Martin",
+    "cost": 10.81
+  },
+  {
+    "name": "The Illusion of Life: Disney Animation",
+    "authors": "Ollie Johnston, Frank Thomas",
+    "cost": 36.49
+  },
+  {
+    "name": "Inferno",
+    "authors": "Dan Brown",
+    "cost": 9.99
+  },
+  {
+    "name": "The Hobbit, or There and Back Again",
+    "authors": "J. R. R. Tolkien",
+    "cost": 26.00
+  },
+  {
+    "name": "Fire in Paradise: An American Tragedy",
+    "authors": " Alastair Gee, Dani Anguiano",
+    "cost": 21.28
+  },
+  {
+    "name": "The Science of Interstellar",
+    "authors": "Kip Thorne",
+    "cost": 29.28
+  }
+]
