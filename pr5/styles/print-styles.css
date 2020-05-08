@@ -1,0 +1,18 @@
+@media print {
+    #main-header, #main-menu, #main-submenu, #main-footer {
+        display: none;
+    }
+
+    #column-1, #column-2, #column-3 {
+        width: 100%;
+    }
+
+    #column-1 img, #column-2 img, #column-3 img {
+        width: 40%;
+        margin-right: 5%;
+    }
+
+    #column-1 h3, #column-2 h3, #column-3 h3 {
+        font-size: 1.4em;
+    }
+}
