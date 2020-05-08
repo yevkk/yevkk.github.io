@@ -213,5 +213,12 @@ document.addEventListener('DOMContentLoaded', function () {
                 this.style.backgroundColor = 'initial';
             }
         );
+
+        document.getElementById('reset-btn').addEventListener('click', function () {
+                resetInput();
+                document.getElementById('client-name').value = '';
+                document.getElementById('client-address').value = '';
+            }
+        );
     }
 );
