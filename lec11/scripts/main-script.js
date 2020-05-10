@@ -1,7 +1,9 @@
 'use strict';
 
 let countries = [];
-let currentCountry = 0;
+let currentCountry = -1;
+let localTotalCost = 0;
+let globalTotalCost = 0;
 
 function displayCountry(country) {
     document.getElementById('country-info').style.display = 'flex';
@@ -9,16 +11,17 @@ function displayCountry(country) {
     document.getElementById('country-name').innerText = country.name;
     document.getElementById('country-flag').src = country.flagFile;
     document.getElementById('country-population').value = country.population;
-    document.getElementById('country-capital').value = country.population;
+    document.getElementById('country-capital').value = country.capital;
 
     let attractionsContainer = document.getElementById('country-attractions');
     attractionsContainer.innerHTML = '';
     let counter = 0;
+    localTotalCost = 0;
     for (let item of country.attractions) {
         attractionsContainer.insertAdjacentHTML('beforeend',
-            `<div class="attraction ${item.selected ? 'chosen' : ''}">
+            `<div class="attraction ${item.selected ? 'chosen' : ''}" data-index="${counter}">
                        <div class="attraction-checkbox-holder">
-                           <input type="checkbox" id="attraction-checkbox-${counter}" ${item.selected ? 'checked' : ''}>
+                           <input type="checkbox" id="attraction-checkbox-${counter}" ${item.selected ? 'checked' : ''} onclick="selectAttraction(this)">
                            <br>
                            <label for="attraction-checkbox-${counter}">Хочу<br>відвідати</label>
                        </div>
@@ -35,9 +38,29 @@ function displayCountry(country) {
                        </div>
                    </div>`
         );
-        counter++
+        counter++;
+        localTotalCost += item.selected ? item.price : 0;
+    }
+    document.getElementById('local-total-cost').value = `${localTotalCost} ₴`;
+}
+
+function selectAttraction(checkbox) {
+    let attractionElement = checkbox.parentElement.parentElement;
+    attractionElement.classList.toggle('chosen');
+
+    let attraction =  countries[currentCountry].attractions[attractionElement.dataset.index];
+    attraction.selected = checkbox.checked;
+
+    if (checkbox.checked) {
+        localTotalCost += attraction.price;
+        globalTotalCost += attraction.price;
+    } else {
+        localTotalCost -= attraction.price;
+        globalTotalCost -= attraction.price;
     }
 
+    document.getElementById('local-total-cost').value = `${localTotalCost} ₴`;
+    document.getElementById('global-total-cost').value = `${globalTotalCost} ₴`;
 }
 
 addEventListener('DOMContentLoaded', () => {
@@ -58,7 +81,8 @@ addEventListener('DOMContentLoaded', () => {
         }
 
         select.addEventListener('change', () => {
-                displayCountry(countries[select.options[select.selectedIndex].value]);
+                currentCountry = select.options[select.selectedIndex].value;
+                displayCountry(countries[currentCountry]);
             }
         );
     }
