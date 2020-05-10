@@ -1,4 +1,4 @@
 # yevkk.github.io
-- [Seminar 6-7](yevkk.github.io/pr6-7)
-- [Lecture 10](yevkk.github.io/lec10)
-- [Lecture 11](yevkk.github.io/lec11)
+- [Seminar 6-7](https://yevkk.github.io/pr6-7/)
+- [Lecture 10](https://yevkk.github.io/lec10/)
+- [Lecture 11](https://yevkk.github.io/lec11/)
