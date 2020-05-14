@@ -183,7 +183,7 @@ document.addEventListener('DOMContentLoaded', function () {
                 counter.innerHTML = '';
                 counter.hidden = true;
 
-                orders = null;
+                orders = [];
             }
         );
 
