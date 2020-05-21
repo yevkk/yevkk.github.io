@@ -1,0 +1,79 @@
+@font-face {
+    src: url("../src/fonts/LexendDeca.ttf");
+    font-family: 'Lexend Deca', sans-serif;
+    font-weight: normal;
+}
+
+@font-face {
+    src: url("../src/fonts/PTSans.ttf");
+    font-family: 'PT Sans', sans-serif;
+    font-weight: normal;
+}
+
+body {
+    font-family: 'PT Sans', sans-serif;
+    font-size: 14px;
+    line-height: 22px;
+}
+
+.content-container {
+    display: block;
+    width: 980px;
+    height: 100%;
+    margin: auto;
+    padding: 0 10px;
+
+    border: 1px solid red;
+}
+
+#main-header {
+    display: block;
+    width: 100%;
+    height: 200px;
+    background-color: ghostwhite;
+}
+
+#main-header-content {
+    display: flex;
+    justify-content: space-between;
+}
+
+#title-holder {
+    align-self: center;
+    display: flex;
+    align-items: stretch;
+}
+
+#logo {
+    width: 150px;
+    height: 150px;
+}
+
+#title-text {
+    font-family: "Lexend Deca", sans-serif;
+    position: relative;
+}
+
+#title {
+    margin: 30px 5px;
+    font-size: 3em;
+    font-weight: bold;
+}
+
+#subtitle {
+    margin: 20px 5px;
+    position: absolute;
+    bottom: 0;
+    font-size: 1.4em;
+    line-height: 1.4em;
+}
+
+#feedback-info-holder {
+    align-self: flex-start;
+    text-align: right;
+}
+
+.contact-phone {
+    font-size: 2.2em;
+    line-height: 1.2em;
+}
