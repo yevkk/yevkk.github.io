@@ -5,6 +5,8 @@
     <title>PhotoLoft</title>
     <link rel="stylesheet" href="styles/reset.css">
     <link rel="stylesheet" href="styles/main-styles.css">
+    <link rel="stylesheet" href="styles/slider-styles.css">
+    <link rel="stylesheet" href="styles/catalog-tree-styles.css">
 </head>
 <body>
 <header id="main-header">
@@ -12,16 +14,115 @@
         <div id="title-holder">
             <img src="src/img/logo.svg" id="logo" alt="PhotoLoft logo">
             <div id="title-text">
-                <p id="title">PhotoLoft</p>
+                <p id="title">PhotoL<span style="color: #FCAB35">o</span>ft</p>
                 <p id="subtitle">Capturing life.<br>Creating art.</p>
             </div>
         </div>
         <div id="feedback-info-holder">
-            <p class="contact-phone" style="font-family: 'PT Sans', sans-serif">+380 (99) 999 99 99</p>
+            <p class="contact-phone">+380 (99) 999 99 99</p>
             <p class="contact-phone">+380 (67) 777 77 77</p>
             <p id="feedback-form-link">Feedback</p>
         </div>
     </div>
 </header>
+<nav id="main-menu">
+    <div class="content-container" id="main-menu-content">
+        <ul>
+            <li>
+                <a href="#">Home</a>
+                <div class="item-hover-indicator"></div>
+            </li>
+            <li class="menu-items-separator">|</li>
+            <li>
+                <a href="#">Catalog</a>
+                <div class="item-hover-indicator"></div>
+            </li>
+            <li class="menu-items-separator">|</li>
+            <li>
+                <a href="#">Payment & Shipping</a>
+                <div class="item-hover-indicator"></div>
+            </li>
+            <li class="menu-items-separator">|</li>
+            <li>
+                <a href="#">Price list</a>
+                <div class="item-hover-indicator"></div>
+            </li>
+            <li class="menu-items-separator">|</li>
+            <li>
+                <a href="#">Contacts</a>
+                <div class="item-hover-indicator"></div>
+            </li>
+        </ul>
+    </div>
+</nav>
+<section id="slider-section">
+    <div class="content-container" id="slider-section-content">
+        <div id="slider-controls">
+            <div class="slider-button" id="prev-button">&lt;</div>
+            <div id="slide-selectors-holder">
+            </div>
+            <div class="slider-button" id="next-button">&gt;</div>
+        </div>
+        <div class="photo-slide" id="slide-1" style="background-image: url('src/img/slider-1.jpg'); opacity: 1;"></div>
+        <div class="photo-slide" id="slide-2" style="background-image: url('src/img/slider-2.jpg')"></div>
+        <div class="photo-slide" id="slide-3" style="background-image: url('src/img/slider-3.jpg')"></div>
+        <div class="photo-slide" id="slide-4" style="background-image: url('src/img/slider-4.jpg')"></div>
+        <div class="photo-slide" id="slide-5" style="background-image: url('src/img/slider-5.jpg')"></div>
+        <div class="photo-slide" id="slide-7" style="background-image: url('src/img/slider-6.jpg')"></div>
+        <div class="photo-slide" id="slide-6" style="background-image: url('src/img/slider-7.jpg')"></div>
+        <script src="scripts/slider.js"></script>
+    </div>
+</section>
+<section id="path-section">
+    <div class="content-container" id="path-section-content">
+        <a href="#">Home</a> / <a href="#">Catalog </a>/ <a href="#">Cameras</a>
+    </div>
+</section>
+<section id="main-section">
+    <div class="content-container" id="main-section-content">
+        <div id="catalog-tree-holder">
+            <ul id="categories-list">
+                <li>
+                    <p class="category-title current-category">Cameras</p>
+                    <ul class="subcategories-list">
+                        <li class="current-subcategory"><a href="#">DSLR & mirrorless</a></li>
+                        <li><a href="#">Compact</a></li>
+                        <li><a href="#">Underwater</a></li>
+                    </ul>
+                </li>
+                <li>
+                    <p class="category-title">Lenses</p>
+                    <ul class="subcategories-list">
+                        <li><a href="#">Fix</a></li>
+                        <li><a href="#">Zoom</a></li>
+                        <li><a href="#">Macro</a></li>
+                        <li><a href="#">Telephoto</a></li>
+                        <li><a href="#">Fisheye</a></li>
+                    </ul>
+                </li>
+                <li>
+                    <p class="category-title">Accessories</p>
+                    <ul class="subcategories-list">
+                        <li><a href="#">Filters</a></li>
+                        <li><a href="#">Protection</a></li>
+                        <li><a href="#">Tripods</a></li>
+                        <li><a href="#">Other</a></li>
+                    </ul>
+                </li>
+                <li>
+                    <p class="category-title">Bags</p>
+                    <ul class="subcategories-list">
+                        <li><a href="#">Backpacks</a></li>
+                        <li><a href="#">Shoulder bags</a></li>
+                        <li><a href="#">Waist belts</a></li>
+                        <li><a href="#">Camera pouches</a></li>
+                    </ul>
+                </li>
+                <script src="scripts/category-list.js"></script>
+            </ul>
+        </div>
+        <div id="products-container"></div>
+    </div>
+</section>
 </body>
 </html>
