@@ -25,11 +25,11 @@ function fillPagesGaps() {
 }
 
 function hidePage(page) {
-    page.style.display = 'none';
+    page.style.display = '';
 }
 
 function showPage(page) {
-    page.style.display = '';
+    page.style.display = 'flex';
 }
 
 function navItemClickHandle(e) {
@@ -43,16 +43,19 @@ function navItemClickHandle(e) {
 
     hidePage(pages[prevIndex]);
     showPage(pages[index]);
+
+    let mainSection = document.getElementById('main-section');
+    if (mainSection.offsetTop < window.pageYOffset){
+        pages[index].scrollIntoView();}
 }
 
 function initiateCatalogue() {
     pages = document.getElementsByClassName('catalog-page');
     pagesHolder = document.getElementById('catalog-pages-holder');
-    currentPage = 1;
+    currentPage = 0;
 
     let navItemsListElement = document.getElementById('catalog-pages-nav');
     for (let i = 0; i < pages.length; i++) {
-        if (i !== currentPage) hidePage(pages[i]);
 
         let navItem = document.createElement('li');
         navItem.innerText = `${i + 1}`;
@@ -62,6 +65,7 @@ function initiateCatalogue() {
         navItems.push(navItem);
     }
     navItems[currentPage].classList.add('current-page-nav-item');
+    showPage(pages[currentPage]);
 
     fillPagesGaps();
 }

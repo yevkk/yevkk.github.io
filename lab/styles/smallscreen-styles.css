@@ -1,0 +1,83 @@
+@media (max-width: 1000px) {
+    #root {
+        font-size: 11px;
+        line-height: 18px;
+    }
+
+    .content-container {
+        width: 95%;
+    }
+
+    #main-header {
+        min-height: 0;
+    }
+
+    #main-header-content {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-around;
+        overflow: visible;
+    }
+
+    #title-holder {
+        margin: 10px 0;
+    }
+
+    #logo {
+        width: 110px;
+        height: 110px;
+    }
+
+
+    #title {
+        margin: 20px 5px;
+    }
+
+    #subtitle {
+        margin: 10px 5px;
+    }
+
+    #feedback-info-holder {
+        margin-bottom: 10px;
+    }
+
+
+    .menu-items-separator {
+        /*display: none;*/
+    }
+
+    #slider-section {
+        height: 250px;
+    }
+
+    #catalog-tree-holder {
+        width: 25%;
+    }
+
+    .subcategories-list {
+        margin-left: 7px;
+    }
+
+    .catalog-page {
+        justify-content: space-around;
+    }
+
+    .product-card {
+        height: 300px;
+        width: 200px;
+    }
+
+    .product-details-holder {
+        position: absolute;
+        left: 20px;
+        bottom: 40px;
+    }
+
+    #photography-history {
+        column-count: 1;
+    }
+
+    #main-footer-content{
+        flex-wrap: wrap;
+    }
+}

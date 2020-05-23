@@ -1,5 +1,7 @@
 #categories-list {
     list-style-type: none;
+    height: 300px;
+    overflow: hidden;
 }
 
 #categories-list > li {

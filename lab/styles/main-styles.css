@@ -7,7 +7,18 @@
 
 /*API responses contain @font-face blocks*/
 
+html {
+    scroll-behavior: smooth;
+}
+
 body {
+    background-image: url("../src/img/background.jpg");
+    background-attachment: fixed;
+    background-size: cover;
+    background-position: center center;
+}
+
+#root {
     font-family: 'PT Sans', sans-serif;
     font-size: 14px;
     line-height: 22px;
@@ -19,14 +30,12 @@ body {
     height: 100%;
     margin: auto;
     padding: 0 10px;
-
-    /*border: 3px dashed red;*/
 }
 
 #main-header {
     display: block;
     width: 100%;
-    height: 200px;
+    min-height: 200px;
     background-color: ghostwhite;
 }
 
@@ -153,10 +162,10 @@ body {
     display: block;
     width: 100%;
     height: 400px;
-    -webkit-box-shadow: inset 0 5px 6px rgba(39, 39, 39, 0.33);
-    -moz-box-shadow: inset 0 5px 6px rgba(39, 39, 39, 0.33);
-    -o-box-shadow: inset 0 5px 6px rgba(39, 39, 39, 0.33);
-    box-shadow: inset 0 5px 6px rgba(39, 39, 39, 0.33);
+    -webkit-box-shadow: inset 0 3px 6px #272727;
+    -moz-box-shadow: inset 0 3px 6px #272727;
+    -o-box-shadow: inset 0 3px 6px #272727;
+    box-shadow: inset 0 3px 6px #272727;
 }
 
 #slider-section-content {
@@ -202,4 +211,58 @@ body {
     flex: 1;
 }
 
+#price-list-download-link {
+    font-size: 1.4em;
+    color: #272727;
+    font-weight: bold;
+    text-align: center;
+
+    transition: all 0.15s 0s ease;
+}
+
+#price-list-download-link:hover {
+    transform: scale(1.1);
+    color: #CFA686;
+}
+
+#price-list-download-link img{
+    display: block;
+    width: 50%;
+    margin: auto;
+}
+
+#photography-history {
+    column-count: 2;
+    column-gap: 60px;
+    text-align: justify;
+    margin-top: 60px;
+    padding-top: 30px;
+    border-top: 1px solid#272727;
+    color: #272727;
+}
+
+#main-footer {
+    display: block;
+    width: 100%;
+    background-color: #272727;
+}
+
+#main-footer-content {
+    display: flex;
+    justify-content: space-between;
+    padding: 20px 0;
+    color: #CFA686;
+}
+
+#main-footer-content a{
+    color: #CFA686;
+}
+
+#main-footer-content a:hover{
+    color: #FCAB35;
+}
+
+#main-footer-content ul{
+    list-style-type: none;
+}
 
