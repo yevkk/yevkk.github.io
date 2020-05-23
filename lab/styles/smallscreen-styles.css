@@ -77,7 +77,11 @@
         column-count: 1;
     }
 
-    #main-footer-content{
+    #main-footer-content {
         flex-wrap: wrap;
+    }
+
+    #feedback-form-holder {
+        width: 80%;
     }
 }

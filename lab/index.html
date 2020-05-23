@@ -9,6 +9,7 @@
     <link rel="stylesheet" href="styles/slider-styles.css">
     <link rel="stylesheet" href="styles/catalog-tree-styles.css">
     <link rel="stylesheet" href="styles/catalog-content-styles.css">
+    <link rel="stylesheet" href="styles/feedback-form-styles.css">
     <link rel="stylesheet" href="styles/smallscreen-styles.css">
 </head>
 <body>
@@ -123,8 +124,9 @@
                             <li><a href="#">Camera pouches</a></li>
                         </ul>
                     </li>
-                    <script src="scripts/category-list.js"></script>
                 </ul>
+                <script src="scripts/category-list.js"></script>
+
                 <form method="get" action="src/documents/PriceList.xlsx" id="priceListDownload">
                     <figure id="price-list-download-link">
                         <img src="src/img/excel-logo.svg" alt="excel-logo">
@@ -836,18 +838,27 @@
         </div>
     </footer>
 </div>
-<script>
-    //if there is no content enough to fill page, footer is displayed at bottom
-    addEventListener('load', () => {
-        if (document.documentElement.clientHeight > document.getElementById('root').clientHeight) {
-            let footer = document.getElementById('main-footer');
-            footer.style.position = 'fixed';
-            footer.style.bottom = '0';
-        }
-    });
-</script>
-<div id="feedback-form-holder">
-    
+<div id="feedback-form-overlay">
+    <div id="feedback-form-holder">
+        <div id="feedback-form-close-btn">&#9587;</div>
+        <p id="feedback-form-title">Feedback</p>
+        <form id="feedbackForm" method="get">
+            <label for="feedback-form-name-input">Full name *</label>
+            <input type="text" id="feedback-form-name-input" placeholder="Field must be filled" required>
+
+            <label for="feedback-form-phone-input">Phone number *</label>
+            <input type="tel" id="feedback-form-phone-input" placeholder="Field must be filled" required>
+
+            <label for="feedback-form-email-input">Email *</label>
+            <input type="email" id="feedback-form-email-input" placeholder="Field must be filled" required>
+
+            <label for="feedback-form-message-input">Message</label>
+            <textarea id="feedback-form-message-input"></textarea>
+
+            <input type="button" id="feedback-form-submit-btn" value="Send">
+        </form>
+    </div>
 </div>
+<script src="scripts/main-script.js"></script>
 </body>
 </html>

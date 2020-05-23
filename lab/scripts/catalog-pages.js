@@ -69,5 +69,3 @@ function initiateCatalogue() {
 
     fillPagesGaps();
 }
-
-addEventListener('load', initiateCatalogue);

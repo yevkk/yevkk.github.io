@@ -12,16 +12,14 @@ html {
 }
 
 body {
+    font-family: 'PT Sans', sans-serif;
+    font-size: 14px;
+    line-height: 22px;
+
     background-image: url("../src/img/background.jpg");
     background-attachment: fixed;
     background-size: cover;
     background-position: center center;
-}
-
-#root {
-    font-family: 'PT Sans', sans-serif;
-    font-size: 14px;
-    line-height: 22px;
 }
 
 .content-container {
