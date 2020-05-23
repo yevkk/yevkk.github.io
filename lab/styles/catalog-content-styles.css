@@ -1,0 +1,112 @@
+#catalog-pages-holder {
+    width: 100%;
+    position: relative;
+}
+
+.catalog-page {
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.product-card {
+    position: relative;
+    width: 250px;
+    height: 400px;
+    margin-bottom: 15px;
+    padding: 15px 0 ;
+    border-radius: 10px;
+    box-sizing: border-box;
+    border-top: 5px solid #FCAB35;
+    border-bottom: 5px solid #FCAB35;
+    background-color: #272727;
+
+    transition: all 0.2s 0s ease-in-out;
+}
+
+.product-card:hover {
+    transform: scale(1.03);
+    box-shadow: 0 0 7px rgba(39, 39, 39, 0.64);
+}
+
+.product-image-holder {
+    height: 40%;
+    width: 100%;
+    box-sizing: border-box;
+    background-color: white;
+    border-left: 1px solid rgba(39, 39, 39, 0.11);
+    border-right: 1px solid rgba(39, 39, 39, 0.11);
+}
+
+.product-image-holder img{
+    display: block;
+    height: 100%;
+    margin: auto;
+}
+
+.product-name {
+    text-align: center;
+    font-size: 1.4em;
+    color: #FCAB35;
+    margin: 10px;
+}
+
+.product-details-holder {
+    position: absolute;
+    left: 20px;
+    bottom: 60px;
+}
+
+.product-details li{
+    list-style-type: none;
+    color: ghostwhite;
+    display: flex;
+    align-items: center;
+}
+
+.detail-icon{
+    height: 15px;
+    width: 15px;
+    margin-right: 5px;
+    background-size: contain;
+    background-position: center center;
+}
+
+.product-price {
+    position: absolute;
+    bottom: 10px;
+    right: 20px;
+    color: #FCAB35;
+    font-size: 1.4em;
+}
+
+.product-details[data-category="cameras"] .detail-icon{
+    background-image: url("../src/img/details-cameras-icon.svg");
+}
+
+#catalog-pages-nav-holder {
+    height: 20px;
+    display: block;
+    text-align: center;
+}
+
+.catalog-pages-nav-item {
+    display: inline-block;
+    width: 10px;
+    margin: 0 10px;
+    cursor: pointer;
+
+    transition: all 0.2s 0s ease-in-out;
+}
+
+.current-page-nav-item {
+    transform: scale(1.3);
+    color: #FCAB35;
+    font-weight: bold;
+}
+
+.catalog-pages-nav-item:hover {
+    color: #CFA686;
+}

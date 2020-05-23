@@ -1,12 +1,13 @@
+'use strict';
+
 let categories = document.getElementsByClassName('category-title');
 
 function showCategory(categoryTitle) {
     let subcategoryList = categoryTitle.nextElementSibling;
-    let currentCategoryTitle = document.getElementsByClassName('current-category')[0];
     for (let item of categories) {
-        if (item === currentCategoryTitle) continue;
-        item.nextElementSibling.style.maxHeight = null;
+        hideCategory(item);
     }
+
     subcategoryList.style.maxHeight = subcategoryList.scrollHeight + 'px';
 }
 

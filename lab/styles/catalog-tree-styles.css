@@ -1,6 +1,9 @@
 #categories-list {
     list-style-type: none;
-    margin-top: 15px;
+}
+
+#categories-list > li {
+    margin-bottom: 5px;
 }
 
 .category-title {
@@ -16,8 +19,8 @@
 .subcategories-list {
     list-style-type: square;
     list-style-position: inside;
-    padding: 5px 0;
-    margin-left: 30px;
+    padding: 3px 0;
+    margin-left: 20px;
 
     max-height: 0;
     width: auto;
