@@ -69,3 +69,5 @@ function initiateCatalogue() {
 
     fillPagesGaps();
 }
+
+window.addEventListener('load', initiateCatalogue);

@@ -9,6 +9,7 @@
 
 html {
     scroll-behavior: smooth;
+    height: 100%;
 }
 
 body {
@@ -20,6 +21,11 @@ body {
     background-attachment: fixed;
     background-size: cover;
     background-position: center center;
+
+   height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
 }
 
 .content-container {
@@ -77,7 +83,7 @@ body {
     margin-top: 10px;
 }
 
-.contact-phone {
+.contact-item {
     font-size: 2.2em;
     line-height: 1.2em;
     font-family: 'PT Sans Narrow', sans-serif;
@@ -200,13 +206,25 @@ body {
     padding-bottom: 100px;
 }
 
-#catalog-tree-holder {
+#aside-container {
     width: 20%;
     padding-left: 5px;
 }
 
-#catalog-section {
+#center-section {
     flex: 1;
+    color: #272727;
+}
+
+.important-message {
+    margin-right: 20px;
+    padding-right: 5px;
+    text-align: right;
+    color: red;
+    font-size: 1.1em;
+    font-style: oblique;
+    border-right: 5px dotted #FCAB35;
+    hyphens: auto;
 }
 
 #price-list-download-link {
@@ -229,7 +247,72 @@ body {
     margin: auto;
 }
 
-#photography-history {
+.center-section-title {
+    font-weight: bold;
+    font-size: 2em;
+    text-transform: uppercase;
+    margin-bottom: 25px;
+}
+
+.center-section-title:not(:first-child) {
+    margin-top: 50px;
+}
+
+
+#intext-feedback-form-link {
+    text-decoration: underline;
+    text-decoration-color: #272727;
+    text-decoration-style: dashed;
+    font-size: 1.1em;
+    cursor: pointer;
+}
+
+#intext-feedback-form-link:hover {
+    color: #CFA686;
+    text-decoration-color: #CFA686;
+}
+
+#office-cards-holder {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.office-card {
+    position: relative;
+    width: 350px;
+    height: 400px;
+    padding: 10px;
+    border-radius: 10px;
+    box-sizing: border-box;
+    border-left: 5px solid #FCAB35;
+    border-right: 5px solid #FCAB35;
+    background-color: #272727;
+    margin-bottom: 10px;
+
+    transition: all 0.2s 0s ease-in-out;
+}
+
+.office-card:hover {
+    transform: scale(1.03);
+    box-shadow: 0 0 7px rgba(39, 39, 39, 0.64);
+}
+
+.office-card p{
+    color: ghostwhite;
+    text-align: center;
+}
+
+.map-frame {
+    width: 90%;
+    height: 300px;
+    position: absolute;
+    left: 50%;
+    bottom: 10px;
+    transform: translateX(-50%);
+}
+
+#center-section-bottom-text {
     column-count: 2;
     column-gap: 60px;
     text-align: justify;
@@ -248,8 +331,11 @@ body {
 #main-footer-content {
     display: flex;
     justify-content: space-between;
-    padding: 20px 0;
     color: #CFA686;
+}
+
+#main-footer-content > div{
+    padding: 20px 0;
 }
 
 #main-footer-content a{

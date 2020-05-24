@@ -1,0 +1,93 @@
+#price-list-holder {
+    display: block;
+    width: 98%;
+    margin: auto;
+}
+
+#price-list-holder a{
+    color: #272727;
+    text-decoration: underline;
+    text-decoration-style: dashed;
+    text-decoration-color: #272727;
+}
+
+#price-list-holder a:hover{
+    color: #CFA686;
+    text-decoration-color: #CFA686;
+}
+
+#price-list-nav {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    margin-top: 20px;
+    box-sizing: border-box;
+}
+
+.price-list-nav-item {
+    height: 40px;
+    width: 24%;
+    box-sizing: border-box;
+    background-color: #272727;
+    font-size: 1.1em;
+    color: ghostwhite;
+    line-height: 40px;
+    text-align: center;
+    cursor: pointer;
+
+    transition: all 0.1s 0s ease-in-out;
+}
+
+.price-list-nav-item:not(.selected-price-list-nav-item):hover {
+    background-color: #CFA686;
+}
+
+.selected-price-list-nav-item {
+    background-color: ghostwhite;
+    color: #272727;
+    line-height: 30px;
+    font-weight: bold;
+    border-top: 5px solid #FCAB35;
+    border-bottom: 5px transparent;
+}
+
+#price-list-tabs-holder {
+    min-height: 100px;
+}
+
+#price-list-tab {
+    background-color: ghostwhite;
+    min-height: 150px;
+    width: 100%;
+}
+
+.price-list-table {
+    width: 100%;
+    margin-top: 20px;
+    column-width: 30px;
+    table-layout: fixed;
+}
+
+.price-list-table caption {
+    caption-side: bottom;
+    text-align: right;
+}
+
+.price-list-table th {
+    font-size: 1.1em;
+}
+
+.price-list-table td {
+    padding: 4px;
+    border: 1px solid #CFA686;
+    width: 100%;
+    vertical-align: middle;
+    font-family: "PT Sans", sans-serif;
+    font-size: 14px;
+}
+
+.price-list-table td:nth-child(3) {
+    text-align: right;
+}
+
+

@@ -1,0 +1,214 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>PhotoLoft</title>
+    <link rel="stylesheet" href="styles/reset.css">
+    <link rel="stylesheet" href="styles/main-styles.css">
+    <link rel="stylesheet" href="styles/slider-styles.css">
+    <link rel="stylesheet" href="styles/feedback-form-styles.css">
+    <link rel="stylesheet" href="styles/smallscreen-styles.css">
+</head>
+<body>
+<div id="wrapper">
+    <header id="main-header">
+        <div class="content-container" id="main-header-content">
+            <div id="title-holder">
+                <img src="src/img/logo.svg" id="logo" alt="PhotoLoft logo">
+                <div id="title-text">
+                    <p id="title">PhotoL<span style="color: #FCAB35">o</span>ft</p>
+                    <p id="subtitle">Capturing life.<br>Creating art.</p>
+                </div>
+            </div>
+            <div id="feedback-info-holder">
+                <p class="contact-item">+380 (99) 999 99 99</p>
+                <p class="contact-item">+380 (67) 777 77 77</p>
+                <p id="feedback-form-link">Feedback</p>
+            </div>
+        </div>
+    </header>
+    <nav id="main-menu">
+        <div class="content-container" id="main-menu-content">
+            <ul>
+                <li>
+                    <a href="#">Home</a>
+                    <div class="item-hover-indicator"></div>
+                </li>
+                <li class="menu-items-separator">|</li>
+                <li>
+                    <a href="index.html">Catalog</a>
+                    <div class="item-hover-indicator"></div>
+                </li>
+                <li class="menu-items-separator">|</li>
+                <li>
+                    <a href="#">Payment & Shipping</a>
+                    <div class="item-hover-indicator"></div>
+                </li>
+                <li class="menu-items-separator">|</li>
+                <li>
+                    <a href="price-list.html">Price list</a>
+                    <div class="item-hover-indicator"></div>
+                </li>
+                <li class="menu-items-separator">|</li>
+                <li>
+                    <a href="contacts.html">Contacts</a>
+                    <div class="item-hover-indicator"></div>
+                </li>
+            </ul>
+        </div>
+    </nav>
+    <section id="slider-section">
+        <div class="content-container" id="slider-section-content">
+            <div id="slider-controls">
+                <div class="slider-button" id="prev-button">&lt;</div>
+                <div id="slide-selectors-holder">
+                </div>
+                <div class="slider-button" id="next-button">&gt;</div>
+            </div>
+            <div class="photo-slide" id="slide-1"
+                 style="background-image: url('src/img/slider-1.jpg'); opacity: 1;"></div>
+            <div class="photo-slide" id="slide-2" style="background-image: url('src/img/slider-2.jpg')"></div>
+            <div class="photo-slide" id="slide-3" style="background-image: url('src/img/slider-3.jpg')"></div>
+            <div class="photo-slide" id="slide-4" style="background-image: url('src/img/slider-4.jpg')"></div>
+            <div class="photo-slide" id="slide-5" style="background-image: url('src/img/slider-5.jpg')"></div>
+            <div class="photo-slide" id="slide-7" style="background-image: url('src/img/slider-6.jpg')"></div>
+            <div class="photo-slide" id="slide-6" style="background-image: url('src/img/slider-7.jpg')"></div>
+            <script src="scripts/slider.js"></script>
+        </div>
+    </section>
+    <section id="path-section">
+        <div class="content-container" id="path-section-content">
+            <a href="#">Home</a> / <a href="#">Contacts </a>
+        </div>
+    </section>
+    <section id="main-section">
+        <div class="content-container" id="main-section-content">
+            <aside id="aside-container">
+                <p class="important-message">
+                    Due to the epidemiological situation, the working hours of our offices may vary, but you can still
+                    contact us if you have any questions.
+                </p>
+            </aside>
+            <section id="center-section">
+                <p class="center-section-title">Contacts</p>
+                You can contact us with provided phone numbers:
+                <p class="contact-item">+380 (99) 999 99 99</p>
+                <p class="contact-item">+380 (67) 777 77 77</p>
+                The PhotoLoft Call Center is open daily from 08:00 until 21:00.
+                <br><br>
+                write us with email:
+                <p class="contact-item">photoloft@example.com</p>
+                <br>
+                or use <span id="intext-feedback-form-link">feedback form</span>.
+                <br><br>
+                Our managers will answer all your questions and help to solve any problem.
+
+                <p class="center-section-title">Our offices</p>
+                <div id="office-cards-holder">
+                    <div class="office-card">
+                        <p>Akademika Hlushkova Ave, 4D, Kyiv, Ukraine, 03680</p>
+                        <p>Working hours: 8.00 - 21.00</p>
+                        <iframe class="map-frame"
+                                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2544.1114071678912!2d30.472161826284633!3d50.383121711348814!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x40d4c8e4302f8173%3A0xed290a5326a634e3!2z0KTQsNC60YPQu9GM0YLQtdGCINC60L7QvNC_J9GO0YLQtdGA0L3QuNGFINC90LDRg9C6INGC0LAg0LrRltCx0LXRgNC90LXRgtC40LrQuCDQmtC40ZfQstGB0YzQutC-0LPQviDQvdCw0YbRltC-0L3QsNC70YzQvdC-0LPQviDRg9C90ZbQstC10YDRgdC40YLQtdGC0YMg0ZbQvNC10L3RliDQotCw0YDQsNGB0LAg0KjQtdCy0YfQtdC90LrQsA!5e0!3m2!1suk!2sua!4v1590315947848!5m2!1suk!2sua"
+                                style="border:0;" allowfullscreen="" aria-hidden="false" tabindex="0">
+                        </iframe>
+                    </div>
+                    <div class="office-card">
+                        <p>Volodymyrska Street, 60, Kyiv, Ukraine, 01601</p>
+                        <p>Working hours: 7.30 - 19.00</p>
+                        <iframe class="map-frame"
+                                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2540.9698038676993!2d30.510950965746346!3d50.44166310772895!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x40d4cef9c7e43aad%3A0x2ba7235902913d52!2z0KfQtdGA0LLQvtC90LjQuSDQutC-0YDQv9GD0YEg0JrQndCj!5e0!3m2!1suk!2sua!4v1590325429593!5m2!1suk!2sua"
+                                style="border:0;" allowfullscreen="" aria-hidden="false" tabindex="0">
+                        </iframe>
+                    </div>
+                </div>
+
+
+                <div id="center-section-bottom-text">
+                    Photography is the art of capturing light with a camera, usually via a digital sensor or film, to
+                    create
+                    an image. With the right camera equipment, you can even photograph wavelengths of light invisible to
+                    the
+                    human eye, including UV, infrared, and radio.
+                    The first permanent photograph was captured in 1826 (some sources say 1827) by Joseph Nicéphore
+                    Niépce
+                    in France. It shows the roof of a building lit by the sun.
+                    Color photography started to become popular and accessible with the release of Eastman Kodak’s
+                    “Kodachrome” film in the 1930s. Before that, almost all photos were monochromatic – although a
+                    handful
+                    of photographers, toeing the line between chemists and alchemists, had been using specialized
+                    techniques
+                    to capture color images for decades before.
+                    These scientist-magicians, the first color photographers, are hardly alone in pushing the boundaries
+                    of
+                    one of the world’s newest art forms. The history of photography has always been a history of people
+                    –
+                    artists and inventors who steered the field into the modern era.
+                </div>
+            </section>
+        </div>
+    </section>
+</div>
+<footer id="main-footer">
+    <div class="content-container" id="main-footer-content">
+        <div id="main-footer-info">
+            2020. PhotoLoft<br>
+            photoloft@example.com
+        </div>
+        <div id="main-footer-menu">
+            <ul>
+                <li>
+                    <a href="#">Home</a>
+                </li>
+                <li>
+                    <a href="index.html">Catalog</a>
+                </li>
+                <li>
+                    <a href="#">Payment & Shipping</a>
+                </li>
+                <li>
+                    <a href="price-list.html">Price list</a>
+                </li>
+                <li>
+                    <a href="contacts.html">Contacts</a>
+                </li>
+            </ul>
+        </div>
+        <div id="used-sources">
+            Used photos and icons from:
+            <br>
+            <a href="https://www.freepik.com" target="_blank">Freepik</a>,
+            <a href="https://pixabay.com/" target="_blank">Pixabay</a>,
+            <a href="https://www.pexels.com/" target="_blank">Pexels</a>,
+            <a href="http://wallpaperswide.com" target="_blank">WallpapersWide</a>
+            <br>
+            All products' information is taken from<br>
+            <a href="https://www.moyo.ua/" target="_blank">moyo.ua</a>
+        </div>
+    </div>
+</footer>
+<div id="feedback-form-overlay">
+    <div id="feedback-form-holder">
+        <div id="feedback-form-close-btn">&#9587;</div>
+        <p id="feedback-form-title">Feedback</p>
+        <form id="feedbackForm" method="get">
+            <label for="feedback-form-name-input">Full name *</label>
+            <input type="text" id="feedback-form-name-input" placeholder="Field must be filled" required>
+
+            <label for="feedback-form-phone-input">Phone number *</label>
+            <input type="tel" id="feedback-form-phone-input" placeholder="Field must be filled" required>
+
+            <label for="feedback-form-email-input">Email *</label>
+            <input type="email" id="feedback-form-email-input" placeholder="Field must be filled" required>
+
+            <label for="feedback-form-message-input">Message</label>
+            <textarea id="feedback-form-message-input"></textarea>
+
+            <input type="button" id="feedback-form-submit-btn" value="Send">
+        </form>
+    </div>
+</div>
+<script src="scripts/feedback-from.js"></script>
+</body>
+</html>

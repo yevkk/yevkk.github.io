@@ -62,3 +62,5 @@ function initiateSlider() {
     document.getElementById('next-button').onclick = nextBtnClickHandle;
     document.getElementById('prev-button').onclick = prevBtnClickHandle;
 }
+
+window.addEventListener('load', initiateSlider);

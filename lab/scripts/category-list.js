@@ -36,3 +36,5 @@ function initiateCollapsibleCategories() {
     if (!currentCategoryTitle) return;
     showCategory(currentCategoryTitle);
 }
+
+window.addEventListener('load', initiateCollapsibleCategories);

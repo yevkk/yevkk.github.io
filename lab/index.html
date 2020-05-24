@@ -13,7 +13,7 @@
     <link rel="stylesheet" href="styles/smallscreen-styles.css">
 </head>
 <body>
-<div id="root">
+<div id="wrapper">
     <header id="main-header">
         <div class="content-container" id="main-header-content">
             <div id="title-holder">
@@ -24,8 +24,8 @@
                 </div>
             </div>
             <div id="feedback-info-holder">
-                <p class="contact-phone">+380 (99) 999 99 99</p>
-                <p class="contact-phone">+380 (67) 777 77 77</p>
+                <p class="contact-item">+380 (99) 999 99 99</p>
+                <p class="contact-item">+380 (67) 777 77 77</p>
                 <p id="feedback-form-link">Feedback</p>
             </div>
         </div>
@@ -39,7 +39,7 @@
                 </li>
                 <li class="menu-items-separator">|</li>
                 <li>
-                    <a href="#">Catalog</a>
+                    <a href="index.html">Catalog</a>
                     <div class="item-hover-indicator"></div>
                 </li>
                 <li class="menu-items-separator">|</li>
@@ -49,12 +49,12 @@
                 </li>
                 <li class="menu-items-separator">|</li>
                 <li>
-                    <a href="src/documents/PriceList.xlsx" download>Price list</a>
+                    <a href="price-list.html">Price list</a>
                     <div class="item-hover-indicator"></div>
                 </li>
                 <li class="menu-items-separator">|</li>
                 <li>
-                    <a href="#">Contacts</a>
+                    <a href="contacts.html">Contacts</a>
                     <div class="item-hover-indicator"></div>
                 </li>
             </ul>
@@ -81,12 +81,13 @@
     </section>
     <section id="path-section">
         <div class="content-container" id="path-section-content">
-            <a href="#">Home</a> / <a href="#">Catalog </a>/ <a href="#">Cameras </a>/ <a href="#">DSLR & mirrorless</a>
+            <a href="#">Home</a> / <a href="index.html">Catalog </a>/ <a href="index.html">Cameras </a>/ <a href="#">DSLR
+            & mirrorless</a>
         </div>
     </section>
     <section id="main-section">
         <div class="content-container" id="main-section-content">
-            <aside id="catalog-tree-holder">
+            <aside id="aside-container">
                 <ul id="categories-list">
                     <li>
                         <p class="category-title current-category">Cameras</p>
@@ -138,7 +139,7 @@
                     document.getElementById('price-list-download-link').onclick = () => priceListForm.submit();
                 </script>
             </aside>
-            <section id="catalog-section">
+            <section id="center-section">
                 <div id="catalog-pages-holder">
                     <div class="catalog-page">
                         <div class="product-card">
@@ -775,7 +776,7 @@
                 </div>
                 <script src="scripts/catalog-pages.js"></script>
 
-                <div id="photography-history">
+                <div id="center-section-bottom-text">
                     Photography is the art of capturing light with a camera, usually via a digital sensor or film, to
                     create
                     an image. With the right camera equipment, you can even photograph wavelengths of light invisible to
@@ -799,45 +800,45 @@
             </section>
         </div>
     </section>
-    <footer id="main-footer">
-        <div class="content-container" id="main-footer-content">
-            <div id="main-footer-info">
-                2020. PhotoLoft<br>
-                photoloft@example.com
-            </div>
-            <div id="main-footer-menu">
-                <ul>
-                    <li>
-                        <a href="#">Home</a>
-                    </li>
-                    <li>
-                        <a href="#">Catalog</a>
-                    </li>
-                    <li>
-                        <a href="#">Payment & Shipping</a>
-                    </li>
-                    <li>
-                        <a href="src/documents/PriceList.xlsx" download>Price list</a>
-                    </li>
-                    <li>
-                        <a href="#">Contacts</a>
-                    </li>
-                </ul>
-            </div>
-            <div id="used-sources">
-                Used photos and icons from:
-                <br>
-                <a href="https://www.freepik.com" target="_blank">Freepik</a>,
-                <a href="https://pixabay.com/" target="_blank">Pixabay</a>,
-                <a href="https://www.pexels.com/" target="_blank">Pexels</a>,
-                <a href="http://wallpaperswide.com" target="_blank">WallpapersWide</a>
-                <br>
-                All products' information is taken from<br>
-                <a href="https://www.moyo.ua/" target="_blank">moyo.ua</a>
-            </div>
-        </div>
-    </footer>
 </div>
+<footer id="main-footer">
+    <div class="content-container" id="main-footer-content">
+        <div id="main-footer-info">
+            2020. PhotoLoft<br>
+            photoloft@example.com
+        </div>
+        <div id="main-footer-menu">
+            <ul>
+                <li>
+                    <a href="#">Home</a>
+                </li>
+                <li>
+                    <a href="index.html">Catalog</a>
+                </li>
+                <li>
+                    <a href="#">Payment & Shipping</a>
+                </li>
+                <li>
+                    <a href="price-list.html">Price list</a>
+                </li>
+                <li>
+                    <a href="contacts.html">Contacts</a>
+                </li>
+            </ul>
+        </div>
+        <div id="used-sources">
+            Used photos and icons from:
+            <br>
+            <a href="https://www.freepik.com" target="_blank">Freepik</a>,
+            <a href="https://pixabay.com/" target="_blank">Pixabay</a>,
+            <a href="https://www.pexels.com/" target="_blank">Pexels</a>,
+            <a href="http://wallpaperswide.com" target="_blank">WallpapersWide</a>
+            <br>
+            All products' information is taken from<br>
+            <a href="https://www.moyo.ua/" target="_blank">moyo.ua</a>
+        </div>
+    </div>
+</footer>
 <div id="feedback-form-overlay">
     <div id="feedback-form-holder">
         <div id="feedback-form-close-btn">&#9587;</div>
@@ -859,6 +860,6 @@
         </form>
     </div>
 </div>
-<script src="scripts/main-script.js"></script>
+<script src="scripts/feedback-from.js"></script>
 </body>
 </html>
