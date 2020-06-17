@@ -1,0 +1,27 @@
+body {
+    perspective: 1000px;
+}
+
+div {
+    width: 500px;
+    height: 500px;
+    display: block;
+    margin: 100px auto;
+    color: #272727;
+    line-height: 250px;
+    text-align: center;
+    font-size: 100px;
+    font-weight: bold;
+    background-color: #fcab35;
+    border-radius: 100px;
+    animation: anim 2s linear 0s infinite normal none;
+}
+
+@keyframes anim {
+    from {
+        transform: rotate3d(1, 1, 1, 0deg);
+    }
+    to {
+        transform: rotate3d(1, 1, 1, 360deg);
+    }
+}
