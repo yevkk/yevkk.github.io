@@ -6,14 +6,17 @@ div {
     width: 500px;
     height: 500px;
     display: block;
-    margin: 100px auto;
+    margin: 150px auto;
     color: #272727;
-    line-height: 250px;
+    line-height: 150px;
+    vertical-align: middle;
+    padding: 25px 0;
     text-align: center;
     font-size: 100px;
     font-weight: bold;
     background-color: #fcab35;
     border-radius: 100px;
+    user-select: none;
     -webkit-animation: animR 2s linear 0s infinite normal none;
     animation: animR 2s linear 0s infinite normal none;
 }
