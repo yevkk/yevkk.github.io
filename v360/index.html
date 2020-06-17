@@ -2,10 +2,21 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>wtf</title>
+    <title>v360</title>
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-<div>Hello,<br>it's me</div>
+<script>
+    function switcher() {
+        let el = document.getElementsByTagName('div')[0];
+        if (el.style.animationName === "animL") {
+            el.style.animationName = "animR";
+        } else {
+            el.style.animationName = "animL";
+        }
+
+    }
+</script>
+<div onclick="switcher()">Hello,<br>it's me</div>
 </body>
 </html>
